@@ -14,9 +14,9 @@ if (window.location.href.startsWith('https://www.youtube.com')) {
         /* Failproof to some degree in case YT changes their elements' classnames. */
         const videoContainer =
             document.getElementById('movie_player') ||
-            document.getElementsByClassName('html5-video-player')[0] ||
-            document.getElementsByClassName('paused-mode')[0] ||
-            document.getElementsByClassName('playing-mode')[0];
+            document.getElementsByClassName('html5-video-player')?[0] ||
+            document.getElementsByClassName('paused-mode')?[0] ||
+            document.getElementsByClassName('playing-mode')?[0];
 
 
         const skipButtons = [
@@ -34,7 +34,9 @@ if (window.location.href.startsWith('https://www.youtube.com')) {
             } else {
                 /* Else, change the ad's track to right finish and artificially end it. */
                 const videoElement = document.getElementsByTagName('video')[0];
-                videoElement.currentTime = videoElement.duration - 0.1;
+                if (videoElement) {
+                    videoElement.currentTime = videoElement.duration - 0.1;
+                }
             }
         }
     }, 100);
