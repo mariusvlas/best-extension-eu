@@ -33,7 +33,7 @@ if (window.location.href.startsWith('https://www.youtube.com')) {
                 skipButtons.forEach(bttn => bttn.click())
             } else {
                 /* Else, change the ad's track to right finish and artificially end it. */
-                const videoElement = document.getElementsByTagName('video')[0];
+                const videoElement = document.getElementsByTagName('video')?[0];
                 if (videoElement) {
                     videoElement.currentTime = videoElement.duration - 0.1;
                 }
