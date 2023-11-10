@@ -1,5 +1,5 @@
 # Skipper
-This is a basic chrome extension MIT license.
+This is a basic chrome extension which skips video ads.
 It does not track or store any user data. The only data it makes use of is the web page's HTML and the current URL. The only action it performs is injecting a script that skips ads.
 ## Features
 Skips ads
