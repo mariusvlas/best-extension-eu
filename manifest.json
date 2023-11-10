@@ -3,7 +3,7 @@
   "name": "Skipper",
   "version": "0.1",
   "author": "First Last",
-  "description": "Remove if website is acting weird",
+  "description": "This doesn't remove video ads, it just skips them really fast. You have to DISABLE/PAUSE all other adblockers on this site so that videos can still load.",
   "permissions": ["scripting", "activeTab"],
   "content_scripts": [
     {
