@@ -2,22 +2,8 @@
 This is a basic chrome extension MIT license.
 It does not track or store any user data. The only data it makes use of is the web page's HTML and the current URL. The only action it performs is injecting a script that skips ads.
 ## Features
-- ..
-- ..
-- ..
-
-## Author
-First Last
-- [Author Website]()
-- [Author Github]()
-- [Project Repository]()
-
-## Requirements
-### Tools
-- Google Chrome Browser
-
+Skips ads
 ## Setup Instructions
-### For Developers
 1. Make a clone of this project, unzipped.
 2. Open Chrome Browser
 3. In a new or blank tab, type in "chrome://extensions/" (without the quotes of course) and click [Enter].
